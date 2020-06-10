@@ -1,0 +1,88 @@
+<!DOCTYPE htlm>
+<head>
+  <link rel="stylesheet" type="text/css" href="basicCSS.css" />
+  <script src="index.js"></script>
+</head>
+<title>SIGN UP</title>
+<body>
+  <form action="home.html" method="POST">
+    <div id="fullpage">
+      <h1>SIGN UP</h1>
+      <i
+        ><p>Please fill in all the fields.</p>
+        <p></p
+      ></i>
+      <hr />
+      <table>
+        <tr>
+          <td class="label">First Name</td>
+          <td class="input">
+            <input
+              name="firstname"
+              id="firstname"
+              type="text"
+              placeholder="enter name"
+              onblur="validateNAME()"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Last Name</td>
+          <td class="input">
+            <input name="lastname" id="lastname" type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Phone Number</td>
+          <td class="input">
+            <input
+              name="phone"
+              id="phone"
+              type="number"
+              placeholder="XXX-XXX-XXXX"
+              onblur="validatePHONE()"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Email</td>
+          <td class="input">
+            <input
+              name="email"
+              id="email"
+              type="text"
+              placeholder="someone@example.com"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Password</td>
+          <td class="input">
+            <input
+              name="password"
+              id="password"
+              type="password"
+              placeholder="enter password"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Confirm Password</td>
+          <td class="input">
+            <input
+              name="re-password"
+              id="re-password"
+              type="password"
+              placeholder="re-enter password"
+              onblur="validatePASS()"
+              required
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <button type="submit" value="submit">Sign-in</button>
+  </form>
+</body>
