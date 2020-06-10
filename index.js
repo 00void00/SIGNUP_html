@@ -12,7 +12,7 @@ function validateNAME() {
 function validatePHONE() {
   var pno = document.getElementById("phone").value;
   var syn = /^\d(3)-\d(3)-\d(4)$/;
-  if (syn.test(pno)) {
+  if (syn.match(pno)) {
     return true;
   } else {
     alert("invalid phone number format");
