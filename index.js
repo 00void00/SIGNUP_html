@@ -31,7 +31,5 @@ function validatePASS() {
     return false;
   }
 }
-function redirect() {
-  window.location = "signin.html";
-}
+
 document.write("FILL THE FORM");
